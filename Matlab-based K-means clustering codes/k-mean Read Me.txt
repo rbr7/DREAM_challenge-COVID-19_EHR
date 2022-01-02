@@ -1,0 +1,21 @@
+4 steps involved in K-mean clustering
+1) data preprocessing
+
+Data format: 
+1 column is patient ID (ID).
+last column is hospitalization status (GS).
+Measurement data is from sencond colum to end-1 (DFM).
+
+knnimpute fill in missing value with knn method, and the measurements were normalized with normc (DFMWN).
+
+2) PCA dimension reduction
+PCA analysis was performed with normalized measurement data. 
+PCs with 90% above were selected (scoreTrain90).
+
+3) K-mean clustering
+First, t-SNE plot was generated with PCs and hospitalized status (scoreTrain90wC).
+kmeans_opt function was used to find optimal k value with Elbow method.
+kmeans function was used to cluter patients by scoreTrain90.
+
+4) Lastly the k-mean was evaluated with Silhoutte plot.
+Evalclusters function was used.
