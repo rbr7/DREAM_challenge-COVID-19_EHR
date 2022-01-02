@@ -21,6 +21,7 @@ This is designed to be a clinically relevant question that will give insight int
 ## Submission queue:
 "COVID-19 DREAM Challenge - Question 2"
 
+
 ## Submission Format:
 - The pipeline will expect a 'predictions.csv' file to be written to the '/output' directory, under the name /output/predictions.csv
 - Two columns are expected in the predictions.csv: 'person_id' and 'score'.
