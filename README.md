@@ -26,4 +26,5 @@ This is designed to be a clinically relevant question that will give insight int
 - Two columns are expected in the predictions.csv: 'person_id' and 'score'.
 score must be a number n where 0 <= n <= 1. A prediction file with a number outside this expected range, or a null, NaN, or other non-number, will cause your submission to be invalid.
 - The predictions.csv file must have all the person_ids from the person.csv file of the evaluation dataset. A predictions.csv output file, that either has a person_id not in the person.csv file or is missing a person_id from the person.csv file, will invalidate your submission. The confidence level that the patient is COVID positive must be saved to a second column named score. 
+- 
 
